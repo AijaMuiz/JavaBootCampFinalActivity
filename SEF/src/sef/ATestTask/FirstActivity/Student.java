@@ -25,7 +25,7 @@ public class Student extends Person {
 		this.schoolName = schoolName;
 	}
 	
-	public String announce() {
+	public String introduce() {
 		return "I am studying in university " + getSchoolName();
 	}
 	

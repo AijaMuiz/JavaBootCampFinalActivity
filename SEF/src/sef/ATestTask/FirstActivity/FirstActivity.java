@@ -29,20 +29,37 @@ public class FirstActivity {
 
 		//TODO 2 sort and this employees by salary (from min to max)
 		// TIP - google bubble sort
-		employeeList.sort(e1);
+		//employeeList.sort(e1);
 		
 		
-		//		System.out.println() result
+		//	System.out.println() result
 
 		//TODO 3 create instance of a Student as a Person ->
+		Student s = new Student();
+		Person p = s;
 		// than ask him introduce()
+		System.out.println(p.introduce());
+				
 		// than make them Student
+		Student s2 = (Student)p;
+		
 		// than ask him introduce()
+		System.out.println(s2.introduce());
 
 		//TODO 4 Create method for full change of employee information
 		// for example some employee change his work
+		
+		changeWork(e1, 42, "Janitor", "RTU", 300);
 
-
+	}
+	
+	public static void changeWork(Employee e, int empId, String jobTitle, String companyName, int salary){
+		
+		e.setEmpId(empId);
+		e.setJobTitle(jobTitle);
+		e.setCompanyName(companyName);
+		e.setSalary(salary);
+		
 	}
 
 	

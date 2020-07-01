@@ -27,7 +27,11 @@ public class Person {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	public void setFirstName(String firstName) throws PersonException {
+		
+		if(firstName.matches(".*\\d.*")){
+			throw new PersonException();
+		}
 		this.firstName = firstName;
 	}
 
@@ -45,7 +49,10 @@ public class Person {
 		return secondName;
 	}
 
-	public void setSecondName(String secondName) {
+	public void setSecondName(String secondName) throws PersonException {
+		if(firstName.matches(".*\\d.*")){
+			throw new PersonException();
+		}
 		this.secondName = secondName;
 	}
 

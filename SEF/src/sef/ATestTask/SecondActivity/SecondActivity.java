@@ -14,6 +14,28 @@ public class SecondActivity {
 
 	}
 
-	//TODO create the Calculator (here or in additional class)
-
+	//TODO create the Calculator (here or in additional class)	
+	public double sum(double firstNumber, double secondNumber){
+		double result = firstNumber + secondNumber;
+		return result;
+	}
+	
+	public double subtract(double firstNumber, double secondNumber){
+		double result = firstNumber - secondNumber;
+		return result;
+	}
+	
+	public double divide(double firstNumber, double secondNumber){
+		double result = firstNumber/secondNumber;
+		return result;
+	}
+	
+	public double multiply(double firstNumber, double secondNumber){
+		double result = firstNumber*secondNumber;
+		return result;
+	}
+		
+	
 }
+
+
